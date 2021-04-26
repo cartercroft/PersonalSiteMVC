@@ -1,0 +1,14 @@
+﻿body {
+}
+#resume{
+    font-size: .95em;
+}
+#resume hr{
+    height: .5em;
+}
+p.right{
+    float: right;
+}
+p.left{
+    float: left;
+}
