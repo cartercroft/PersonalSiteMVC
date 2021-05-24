@@ -1,31 +1,27 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
-
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+﻿<!-- Banner -->
+<section id="banner">
+    <h2>Carter Croft</h2>
+    <p>Full Stack Web Developer<br />     HTML, CSS, C#, JavaScript, SQL</p>
+    <ul class="actions">
+        <li><a href="@Url.Action("Contact", "Home")" class="button special big">Contact me!</a></li>
+    </ul>
+</section>
+<!-- One -->
+<section id="one" class="wrapper style1">
+    <div class="container 75%">
+        <div class="row 200%">
+            <div class="6u 12u$(medium)">
+                <header class="major">
+                    <h2>About me</h2>
+                    <img class="image rounded" src="~/Content/images/myPic.png" style="width:13.6em; height:17em; display: block; margin-bottom: 5%" />
+                    <h4>My Languages: HTML/CSS, JavaScript, C#, C++, SQL</h4>
+                </header>
+            </div>
+            <div class="6u$ 12u$(medium)">
+                <p>My name is Carter Croft. I am a full stack web developer located in Overland Park, Kansas. I received my formal development training at Centriq Training in Kansas City, Missouri where we were taught Front End, Middle Tier, and Back End development. I have always been in love with all types of technology and how they work. I enjoy learning about technologies that are new to me and I'm not afraid of a challenge.</p>
+                <p>Before Centriq, I was going to college for Software Development but decided that Centriq would be a better fit for me because it is much more technology-focused than a traditional college. While I was in college, I took an introductory OOP course which led me to taking a C++ class which I excelled in and thoroughly enjoyed.</p>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+    @Html.Partial("_ContactMe")
+</section>

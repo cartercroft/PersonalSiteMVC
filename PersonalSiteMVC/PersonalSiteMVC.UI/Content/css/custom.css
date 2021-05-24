@@ -1,0 +1,87 @@
+﻿body {
+}
+
+#resume {
+    font-size: .95em;
+}
+
+    #resume hr {
+        height: .5em;
+    }
+
+p.right {
+    float: right;
+}
+
+p.left {
+    float: left;
+}
+
+.headerLogo {
+    color: rgb(243,250,245);
+}
+
+.caption {
+    border: silver 1px solid;
+    border-radius: 5em;
+    padding: 5%;
+    text-align: left;
+    background-color: rgba(174,176,174, .3)
+}
+
+    .caption img {
+        border-radius: 3em 3em 0 0 !important;
+    }
+
+#projectsFlex {
+    justify-content: center;
+}
+
+.image.captioned a {
+    text-decoration: none;
+}
+
+    .image.captioned a h3:hover {
+        text-decoration: underline;
+        color: orange;
+    }
+
+#projects button {
+    margin-bottom: 2em;
+}
+
+#projects i {
+    font-size: 7em;
+    margin-right: 2%;
+    color: black;
+}
+#projects i:hover {
+    color: orange;
+}
+
+#projects section {
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+#projects span {
+    margin-bottom: 5%;
+}
+#projects span:hover {
+    color: black;
+    background-color: orange;
+}
+#header div{
+    margin-bottom: 2em;
+    border-bottom: 5px black solid;
+}
+
+#header.alt{
+    height: 5.5em;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+header.major{
+    justify-content: center;
+    padding-top: 3%;
+}
