@@ -1,0 +1,20 @@
+﻿@model PersonalSiteMVC.UI.Models.ContactViewModel
+
+@{
+    ViewBag.Title = "Email Received";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 alert alert-success text-center" id="emailConfirm">
+            <header class="major">
+                <h2>@ViewBag.Title</h2>
+            </header>
+            <h4>Thank you for your email @Html.DisplayFor(x => x.Name)!</h4>
+            <p>I will try to respond to <b>@Model.Email</b> within 24 hours. Thanks for reaching out!</p>
+            <p>
+                @Html.ActionLink("Home", "Index", null, new { @class = "btn btn-dark btn-lg" })
+            </p>
+        </div>
+    </div>
+</div>

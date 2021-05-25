@@ -3,6 +3,7 @@
 
 #resume {
     font-size: .95em;
+    padding-top: 5em;
 }
 
     #resume hr {
@@ -26,7 +27,8 @@ p.left {
     border-radius: 5em;
     padding: 5%;
     text-align: left;
-    background-color: rgba(174,176,174, .3)
+    height: 50em;
+    background-color: rgba(174,176,174, .3);
 }
 
     .caption img {
@@ -44,6 +46,10 @@ p.left {
     .image.captioned a h3:hover {
         text-decoration: underline;
         color: orange;
+    }
+    .image.captioned a h3 {
+        border-radius: 0 0 3em 3em !important;
+        text-align: center;
     }
 
 #projects button {
@@ -84,4 +90,96 @@ p.left {
 header.major{
     justify-content: center;
     padding-top: 3%;
+}
+
+#contactForm {
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, .6);
+}
+#contactForm .btn{
+    margin-top: 1%;
+}
+.wrapper.style3{
+    text-align: center;
+}
+#one{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.major h2.aboutMe{
+    padding-left: 2em;
+}
+
+.aboutMe p{
+    text-align: left;
+    padding-right: 2em;
+}
+
+.aboutMe p:first-of-type{
+    padding-top: 3.5em;
+}
+.aboutMe{
+    text-align: center;
+    padding-left: 0;
+    background-color: rgba(174,176,174, .3);
+}
+
+#one header{
+    justify-content: center;
+    text-align: center;
+}
+
+#myImage {
+    width: 20em;
+    border-radius: 3em !important;
+    object-fit: contain;
+}    
+header.major.cust{
+    margin-top: 3em !important;
+    margin-bottom: 6em;
+}
+
+.contactMe {
+    padding-bottom: 6em !important;
+}
+
+#four{
+    position: relative;
+    top: 2em;
+}
+
+.feature img{
+    height: 10em;
+    width: 10em;
+}
+
+.feature-gridCust{
+    justify-content: center;
+}
+
+.center{
+    align-content: center;
+}
+
+.card {
+    text-align: center;
+    padding: 3em !important;
+    margin: 3%;
+    background-color: rgba(174,176,174, .3) !important;
+}
+
+.card-img-top{
+    height: 19.5rem;
+    width: 12.3rem;
+}
+
+div.custRow{
+    padding-left: 0;
+}
+
+div#emailConfirm{
+    margin-top: 15%;
+    margin-bottom: 6%;
+    border-radius: 6em;
 }

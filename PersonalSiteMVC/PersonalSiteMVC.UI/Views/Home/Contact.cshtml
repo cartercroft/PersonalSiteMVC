@@ -1,23 +1,57 @@
-﻿@{
+﻿@model PersonalSiteMVC.UI.Models.ContactViewModel
+
+@{
     ViewBag.Title = "Contact";
 }
-<div class="container">
-    <h2>@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
+<div class="container" id="contactForm">
 
+    @if (ViewBag.CustomerMessage != null)
+    {
+        //Only shown if sending an email failed
+        <p>@ViewBag.CustomerMessage</p>
+    }
+
+    <h2>@ViewBag.Title</h2>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="row">
+            <div class="col-md-12">
+                @Html.LabelFor(model => model.Name)
+                <fieldset>
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder = "Your name here..." } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </fieldset>
+            </div>
+            <div class="col-md-12">
+                @Html.LabelFor(model => model.Email)
+                <fieldset>
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @placeholder = "Email..." } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </fieldset>
+            </div>
+            <div class="col-md-12">
+                @Html.LabelFor(model => model.Subject)
+                <fieldset>
+                    @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control", @placeholder = "Subject..." } })
+                    @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
+                </fieldset>
+            </div>
+            <div class="col-md-12">
+                @Html.LabelFor(model => model.Message)
+                <fieldset>
+                    @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control", @placeholder = "Your message..." } })
+                    @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                </fieldset>
+            </div>
+            <div class="col-md-12">
+                <fieldset>
+                    <input type="submit" value="Send" class="btn btn-dark rounded" />
+                </fieldset>
+            </div>
+        </div>
+    }
 </div>
 
-
-
-
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
