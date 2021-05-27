@@ -61,9 +61,9 @@ p.left {
     margin-right: 2%;
     color: black;
 }
-#projects i:hover {
-    color: orange;
-}
+    #projects i:hover {
+        color: rgb(255,157,92);
+    }
 
 #projects section {
     justify-content: center;
@@ -125,15 +125,22 @@ header.major{
     background-color: rgba(174,176,174, .3);
 }
 
+div#aboutMe2{
+    padding-top: 2%;
+}
+
 #one header{
     justify-content: center;
     text-align: center;
 }
 
 #myImage {
-    width: 20em;
-    border-radius: 3em !important;
+    width: 100%;
+    height: 100%;
+    border-radius: 25% !important;
     object-fit: contain;
+    padding: 0 6.6%;
+    right: 3.6%;
 }    
 header.major.cust{
     margin-top: 3em !important;
@@ -170,12 +177,13 @@ header.major.cust{
 }
 
 .card-img-top{
-    height: 19.5rem;
-    width: 12.3rem;
+    height: 100%;
+    width: 100%;
 }
 
 div.custRow{
     padding-left: 0;
+    margin-left: 1%;
 }
 
 div#emailConfirm{
