@@ -176,6 +176,10 @@ header.major.cust{
     background-color: rgba(174,176,174, .3) !important;
 }
 
+div.card.col-md-3 {
+    box-shadow: rgba(0, 0, 0, .3) 1em 1em !important;
+}
+
 .card-img-top{
     height: 100%;
     width: 100%;
@@ -190,4 +194,8 @@ div#emailConfirm{
     margin-top: 15%;
     margin-bottom: 6%;
     border-radius: 6em;
+}
+
+#emailConfirmContainer{
+    margin-left: .5%;
 }
