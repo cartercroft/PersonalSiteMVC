@@ -169,6 +169,10 @@ header.major.cust{
     align-content: center;
 }
 
+#projects header.major.cust{
+    margin-bottom: 3em;
+}
+
 .card {
     text-align: center;
     padding: 3em !important;
