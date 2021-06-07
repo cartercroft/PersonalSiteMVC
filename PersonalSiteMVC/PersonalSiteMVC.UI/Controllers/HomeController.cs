@@ -39,6 +39,10 @@ namespace PersonalSiteMVC.UI.Controllers
 
             //Build the message
             string message = $"From: {cvm.Name}<br />Subject: {cvm.Subject}<br />From Email: {cvm.Email}<br /><br />{cvm.Message}";
+            if(cvm.MeetDateTime != null)
+            {
+                message += $"<br /><br />Meet Date: {cvm.MeetDateTime:d}";
+            }
 
             //MailMessage - what sends the email
             //Arguments for this method were defined in the Web.config at the project level.

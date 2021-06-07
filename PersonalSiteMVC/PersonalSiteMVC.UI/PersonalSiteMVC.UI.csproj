@@ -129,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="config\AppSecretKeys.config" />
+    <Content Include="Content\css\images\ui-icons_555555_256x240.png" />
     <Content Include="Content\css\jquery-ui.css" />
     <Content Include="Content\images\apple-touch-icon.png" />
     <Content Include="Content\css\custom.css" />
@@ -158,6 +159,7 @@
     <Content Include="Content\images\pic07.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Content\css\images\ui-icons_444444_256x240.png" />
     <Content Include="Scripts\js\bootstrap.bundle.js" />
     <Content Include="Scripts\js\bootstrap.bundle.min.js" />
     <Content Include="Scripts\js\bootstrap.esm.js" />

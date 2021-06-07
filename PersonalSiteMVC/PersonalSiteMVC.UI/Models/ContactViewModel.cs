@@ -20,5 +20,9 @@ namespace PersonalSiteMVC.UI.Models
         [Required(ErrorMessage = "*Message is required.")]
         [UIHint("MultilineText")]
         public string Message { get; set; }
+
+        [DataType(DataType.DateTime)]
+        [Display(Name = "Meet Date")]
+        public DateTime MeetDateTime { get; set; }
     }
 }

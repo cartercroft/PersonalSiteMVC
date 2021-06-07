@@ -17,41 +17,55 @@
     {
         @Html.AntiForgeryToken()
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="row">
-            <div class="col-md-12">
-                @Html.LabelFor(model => model.Name)
-                <fieldset>
-                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder = "Your name here..." } })
-                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
-                </fieldset>
-            </div>
-            <div class="col-md-12">
-                @Html.LabelFor(model => model.Email)
-                <fieldset>
-                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @placeholder = "Email..." } })
-                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-                </fieldset>
-            </div>
-            <div class="col-md-12">
-                @Html.LabelFor(model => model.Subject)
-                <fieldset>
-                    @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control", @placeholder = "Subject..." } })
-                    @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
-                </fieldset>
-            </div>
-            <div class="col-md-12">
-                @Html.LabelFor(model => model.Message)
-                <fieldset>
-                    @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control", @placeholder = "Your message..." } })
-                    @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
-                </fieldset>
-            </div>
-            <div class="col-md-12">
-                <fieldset>
-                    <input type="submit" value="Send" class="btn btn-dark rounded" />
-                </fieldset>
-            </div>
+    <div class="row">
+        <div class="col-md-12">
+            @Html.LabelFor(model => model.Name)
+            <fieldset>
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder = "Your name here..." } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </fieldset>
         </div>
+        <div class="col-md-12">
+            @Html.LabelFor(model => model.Email)
+            <fieldset>
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @placeholder = "Email..." } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </fieldset>
+        </div>
+        <div class="col-md-12">
+            @Html.LabelFor(model => model.Subject)
+            <fieldset>
+                @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control", @placeholder = "Subject..." } })
+                @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
+            </fieldset>
+        </div>
+        <div class="col-md-12">
+            @Html.LabelFor(model => model.Message)
+            <fieldset>
+                @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control", @placeholder = "Your message..." } })
+                @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+            </fieldset>
+        </div>
+        <div class="col-md-12">
+            @Html.LabelFor(model => model.MeetDateTime)
+            <fieldset>
+                @Html.EditorFor(model => model.MeetDateTime, new { htmlAttributes = new { @class = "form-control", placeholder = "Date to Meet...", id = "datepicker" } })
+                @Html.ValidationMessageFor(model => model.MeetDateTime, "", new { @class = "text-danger" })
+            </fieldset>
+        </div>
+        <div class="col-md-12">
+            <fieldset>
+                <input type="submit" value="Send" class="btn btn-dark rounded" />
+            </fieldset>
+        </div>
+    </div>
     }
 </div>
-
+@section scripts{
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({
+            })
+        })
+    </script>
+    }

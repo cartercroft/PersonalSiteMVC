@@ -12,6 +12,11 @@
             </header>
             <h4>Thank you for your email @Html.DisplayFor(x => x.Name)!</h4>
             <p>I will try to respond to <b>@Model.Email</b> within 24 hours. Thanks for reaching out!</p>
+            @if (Model.MeetDateTime != null)
+            {
+                <p>I will let you know if the date you chose works for me. If not, we will reschedule for a day that works for us both.</p>
+            }
+
             <p>
                 @Html.ActionLink("Home", "Index", null, new { @class = "btn btn-dark btn-lg" })
             </p>
