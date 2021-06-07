@@ -129,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="config\AppSecretKeys.config" />
+    <Content Include="Content\css\jquery-ui.css" />
     <Content Include="Content\images\apple-touch-icon.png" />
     <Content Include="Content\css\custom.css" />
     <Content Include="Content\images\BrandanMitchell.jpg" />
@@ -163,6 +164,7 @@
     <Content Include="Scripts\js\bootstrap.esm.min.js" />
     <Content Include="Scripts\js\bootstrap.js" />
     <Content Include="Scripts\js\bootstrap.min.js" />
+    <Content Include="Scripts\js\jquery-ui.min.js" />
     <Content Include="Scripts\js\jquery.min.js" />
     <Content Include="Scripts\js\main.js" />
     <Content Include="Scripts\js\skel.min.js" />
